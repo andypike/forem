@@ -8,7 +8,7 @@
       <th><%= t('edit', :scope => 'forem.admin.categories') %></th>
       <th><%= t('delete', :scope => 'forem.admin.categories') %></th>
       <th><%= t('category', :scope => 'forem.admin.categories') %></th>
-
+      <td>Ordinal</th>
     </tr>
   </thead>
   <tbody>
@@ -19,6 +19,7 @@
         <td>
           <%= forem_emojify(category.name) %>
         </td>
+        <td><%=forem.ordinal%></td>
       </tr>
     <% end %>
   </tbody>
