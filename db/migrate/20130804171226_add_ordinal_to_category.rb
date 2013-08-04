@@ -1,5 +1,5 @@
 class AddOrdinalToCategory < ActiveRecord::Migration
   def change
-    add_column :categories, :ordinal, :integer
+    add_column :forem_categories, :ordinal, :integer
   end
 end
