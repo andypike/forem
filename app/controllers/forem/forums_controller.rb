@@ -4,7 +4,7 @@ module Forem
     helper 'forem/topics'
 
     def index
-      @categories = Forem::Category.all.order("ordinal ASC")
+      @categories = Forem::Category.order("ordinal ASC")
     end
 
     def show
